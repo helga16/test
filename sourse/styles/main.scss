@@ -1,0 +1,16 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+@import "jquery.nbc.scss";
+@import "global/theme-banners";
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+@import "global/common";
+
+
+
+@import "sections/header";
+@import "sections/service";
+@import "sections/about";
+@import "sections/portfolio";
+@import "sections/footer";

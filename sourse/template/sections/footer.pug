@@ -1,0 +1,24 @@
+footer
+	.container
+		form.form_container(action='addDB.php', method='POST')
+			p.footer_title Оставьте заявку
+			input.form_field(name='regname', type='text', required, placeholder='Ваше имя')
+			input.form_field(name='email', type='email', required, placeholder='Ваш email')
+			textarea.form_field_text(name='letter', maxlength='4000', placeholder='Краткое описание проекта')
+			p.form_field_label *Максимальное количество символов 4000.
+			input.submit_input(type='submit', value='Отправить')
+		.contact_form(id='contact_form')
+			p Наш адрес: г.Харьков, Украина
+			p Email:webDevassistant@gmail.com
+			p Skype:olya.kaplunova
+			p Telegtam: @Olga_webAssist
+			p.tel Телефон: +380686052291
+.footer_desc 
+	p.footer_desc_text Все права защищены  |
+	.footer_social
+		a(href='https://t.me/Olga_webAssist', target='_blank')
+			i.footer_social_link.fa.fa-telegram.fa-3x(aria-hidden="true")
+		a(href='https://www.facebook.com/illa.reya', target='_blank')
+			i.footer_social_link.fa.fa-facebook-official.fa-3x(aria-hidden="true")
+		a(href='https://web.skype.com', target='_blank')
+			i.footer_social_link.fa.fa-skype.fa-3x(aria-hidden='true')

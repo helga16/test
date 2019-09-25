@@ -1,0 +1,104 @@
+.service{
+//background-color: rgba(164, 178, 181, 0.1);
+
+}
+.container_service{
+	background-color: #fff;
+
+max-width: 1024px;
+	margin: auto;
+}
+
+.service_item{
+
+margin: 70px auto;
+padding-bottom: 40px;
+		border-radius: 5px;
+		box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+
+	&:nth-of-type(2n){
+	display: flex;
+	flex-direction: row-reverse;
+		margin-top: 10px;
+
+	}
+}
+
+	@media(max-width: 535px){
+	.service_item,.service_item:nth-of-type(2n){
+
+
+	display: block;
+	width:95%;
+margin: 0 auto;
+}
+}
+.service_image{
+	width:30%;
+		max-height: 160px;
+
+			vertical-align: top;
+	display: inline-block;
+box-sizing: border-box;
+		margin-top: 10px;
+}
+@media(max-width: 535px){
+	.service_image{
+		float: none;
+	
+	display: block;
+	margin: 0 auto;
+height:100%;
+	width:98%;
+}
+			
+	}
+.service_list{
+		vertical-align: top;
+	display: inline-block;
+	width:68%;
+box-sizing: border-box;
+list-style: url('../images/icon.jpg');
+				@media(max-width: 535px){
+	display: block;
+	width:90%;
+	margin:10px auto;
+
+			}
+
+}
+.service_list_item{
+	line-height: 2.5;
+
+}
+.cost_title{
+font-family: $ff-main-bold;
+font-size: 1.5rem;
+margin-bottom: 60px;
+color:#bc5757;
+
+}
+.service_cost{
+	text-align: left;
+	line-height: 1.5;
+}
+.service_calc{
+vertical-align: top;
+display: inline-block;
+width:58%;
+	@media (max-width: 1000px) {
+			padding-left: 20px;
+box-sizing:border-box;
+	}
+	@media(max-width: 350px){
+		display: block;
+width:80%;
+margin: 0 auto;
+	}
+
+}
+.service_bc{
+vertical-align: middle;
+display: inline-block;
+width:40%;
+}

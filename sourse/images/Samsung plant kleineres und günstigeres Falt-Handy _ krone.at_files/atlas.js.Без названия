@@ -1,0 +1,71 @@
+var ATLAS = {
+  providers: {},
+  init: function() {
+    var self = this;
+    if (!Cookies.get("atlas_pinged2")) {
+      self.request("/api/ping", function(d) {
+        //self.addProvider("ga", d.token);
+        Cookies.set("atlas_pinged2", { expires: 1, path: "/" });
+      });
+    }
+  },
+  addProvider: function(typ, token) {
+    var self = this;
+
+    if (!self.providers[typ]) {
+      self.providers[typ] = true;
+      self.request("/api/id?typ=" + typ + "&jwt=" + token, function(d) {});
+    }
+  },
+  trackChannel: function(channel, family) {
+    var self = this;
+    if (!family) {
+      family = "desktop";
+    }
+    self.request("/api/path?path=" + channel + "&family=" + family, function(
+      d
+    ) {});
+  },
+  getKV: function(cb) {
+    var self = this;
+    self.request("/api/kv", function(d) {
+      //might be removed later
+      for (var key in d.kv) {
+            d.kv[key]=decodeURI(d.kv[key]);
+      }
+      self._kv = d.kv;
+      cb(d);
+    });
+  },
+  kv: function() {
+    var self = this;
+    return self._kv;
+  },
+  setKV: function(k, v, cb) {
+    var self = this;
+    self.request(
+      "/api/set_kv?key=" + encodeURI(k) + "&value=" + encodeURI(v),
+      function(d) {
+          //might be removed later
+        for (var key in d.kv) {
+            d.kv[key]=decodeURI(d.kv[key]);
+        }
+        self._kv = d.kv;
+        cb(d);
+      }
+    );
+  },
+  request: function(url, callback) {
+    var self = this;
+    $.get("https://atlas1.krone.at" + url, function(d) {
+      callback(d);
+    });
+  }
+};
+
+$(document).ready(function() {
+  ATLAS.init();
+  $(document).on("krn-coral-login", function() {
+    ATLAS.addProvider("atlas", Cookies.get("KMJWT"));
+  });
+});

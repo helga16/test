@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #42484e;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-schlagwort</title>
+  <path class="a" d="M3,11.11V21.89A2.1,2.1,0,0,0,5.11,24H22a2.12,2.12,0,0,0,1.68-.83l4.08-5.4a2.1,2.1,0,0,0,0-2.54l-4.08-5.4A2.12,2.12,0,0,0,22,9H5.11A2.1,2.1,0,0,0,3,11.11Z"/>
+</svg>
