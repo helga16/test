@@ -1,18 +1,16 @@
 body {
 	font-family: $ff-main;
 	font-size: 1rem;
-	line-height: 1.2;
+	line-height: 36px;
 
 }
 
 html {
 	box-sizing: border-box;
-	font-size: 20px;
-	@media (max-width: 1000px) {
+	font-size: 18px;
+
+	@media (max-width: 500px) {
 		font-size: 16px;
-	}
-	@media (max-width: 600px) {
-		font-size: 14px;
 	}
 }
 
@@ -26,4 +24,6 @@ ol {
 	margin: 0;
 	list-style-type: none;
 }
-
+a{
+	text-decoration:none;
+}

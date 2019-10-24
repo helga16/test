@@ -41,6 +41,8 @@ gulp.task('js', function() {
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'sourse/js/jquery-1.11.1.min.js',
+    'sourse/js/jquery-ui.min.js',
+    'sourse/js/slick.min.js',
     'sourse/js/jquery.easing.1.3.min.js',
     'sourse/js/jquery.event.drag.min.js',
     'sourse/js/jquery.mousewheel.min.js',

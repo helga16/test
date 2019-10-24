@@ -1,5 +1,7 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/normalize.scss/normalize";
+@import "slick-theme.scss";
+@import "slick.scss";
 @import "jquery.nbc.scss";
 @import "global/theme-banners";
 @import "global/fonts";
@@ -9,8 +11,5 @@
 
 
 
-@import "sections/header";
-@import "sections/service";
-@import "sections/about";
-@import "sections/portfolio";
-@import "sections/footer";
+
+@import "sections/slides";

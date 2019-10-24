@@ -13,27 +13,51 @@
 	font-size: 0;
 }
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 line-height: 1.5;
 letter-spacing: 5px;
 margin: 0 0 10px 0;
 color:#e38480;
 
 }
+p{
+	margin:0;
+}
+a{
+	text-decoration: none;}
 .title{
 	text-align: center;
-	font-family:'Open Sans-Bold', sans-serif;
-font-size: 2rem;
+	font-family:$ff-main;
+	font-weight: bold;
+font-size: 2.5rem;
 letter-spacing: 3px;
 margin-bottom: 80px;
-color:#e38480;
+color:#254260;
+line-height: 1.2;
+text-transform: uppercase;
+@media(max-width: 500px){
+	font-size: 1.6rem;
+
+}
 
 }
 section{
-	margin-bottom: 150px;
+			margin-bottom: 120px;
+
+	@media(max-width: 600px){
+		margin-bottom: 70px;
+	}
 }
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+.button{
+display: block;
+border-radius: 5px;
+border:1px solid transparent;
+padding: 15px 30px;
+color:#a9cdf2;
+background-color: #254260;
 }

@@ -26,6 +26,7 @@
 }
 
 .nbc-banners .nbc-control {
+    display: none;
     position: absolute;
     top: 0;
     width: 33px;
@@ -96,10 +97,10 @@
 .nbc-banners .nbc-pagination li a {
     display: inline-block;
     background: #aaa;
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     margin: 0 4px;
-    border-radius: 6px;
+    border-radius: 12px;
     -moz-transition: all 0.25s ease-in;
     -webkit-transition: all 0.25s ease-in;
     -o-transition: all 0.25s ease-in;

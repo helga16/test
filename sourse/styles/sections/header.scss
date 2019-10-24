@@ -4,11 +4,8 @@
 	background-size: cover;
 
 	height:600px;
-	margin: 60px 0 150px 0;
-	@media (max-width: 1000px) {
-			margin: 60px 0 150px 0;
-
-	}
+	//margin-bottom: 60px;
+	overflow: hidden;
 }
 .header_top{
 background-color:#254260;
@@ -20,24 +17,35 @@ width:100%;
 border-bottom: 1px solid #a9cdf2;
 }
 
-
+.header_title{
+	font-weight:bold;
+letter-spacing: 5px;
+text-align: center;
+text-transform: uppercase;
+margin: 0 0 10px 0;
+color:#fff;
+	@media(max-width: 450px){
+		font-size: 1.8rem;
+	
+	}
+}
 .header_description{
 margin: 20px;
 	text-align: left;
 	background-color: rgba(164, 178, 181, 0.7);
 	height:500px;
-	width:50%;
+	width:65%;
 	box-sizing: border-box;
-padding: 10% 30px;
-	@media(max-width: 560px){
-	width:80%;
+padding: 10% 25px;
+	@media(max-width: 660px){
+	width:90%;
 
 	}
 
-		@media(max-width: 350px){
+		@media(max-width: 400px){
 	width:100%;
-margin: 20px 0 0 0;
-padding: 10% 4px;
+margin: 0;
+padding: 30% 0 10% 30px;
 
 				}
 }
@@ -64,9 +72,6 @@ display: flex;
 .header_menu_burger{
 	height:40px;
 	width:40px;
-
-	//background: url('../images/iconMenu.png');
-	//background-size: cover;
 display:none;
 }
 .header_link{
@@ -92,9 +97,6 @@ font-weight:bold;
 	
 }
 @media(max-width: 735px){
-	.header {
-	margin: 0 0 150px 0;
-}
 	.header_top{
 		position:static;
 //text-align: right;
@@ -146,18 +148,18 @@ font-weight:bold;
 vertical-align: top;
 display: inline-block;
 	font-size: 1.3rem;
-	@media(max-width: 840px){
-width:32%;
+	@media(max-width: 935px){
+width:26%;
 
 
 	}
 	@media(max-width: 735px){
-width:88%;
+width:86%;
 padding:10px 5px;
 	}
 	@media(max-width: 320px){
 		
-width:75%;
+width:80%;
 
 }
 }
@@ -175,25 +177,6 @@ margin:0;
 	font-family: $ff-main-light;
 	color:#a9cdf2;
 	font-size: 1rem;
-}
-
-
-
-
-
-.header_title{
-	font-size: 2rem;
-	font-weight:bold;
-line-height: 1.2;
-letter-spacing: 5px;
-text-align: center;
-text-transform: uppercase;
-margin: 0 0 10px 0;
-color:#fff;
-	@media(max-width: 250px){
-		font-size: 1.7rem;
-	
-	}
 }
 .header_text{
 line-height: 1.3;

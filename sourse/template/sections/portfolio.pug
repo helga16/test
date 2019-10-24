@@ -1,16 +1,34 @@
-.title Наши работы
+.title Мои работы
 section(id='portfolio').portfolio
 	.container
-		a.portfolio_link(href='ourworks/index.html',target='_blank')
+		.portfolio__list
+			.portfolio__list-item
+				a.portfolio_link(href='http://junwpblog.zzz.com.ua',target='blank')
 
-			.portfolio_image_item
-				img.portfolio_image(src='images/work-1.png',alt='')
-				.portfolio_link_text 
-					p Вертска Landing Page
-					p Перейти к просмотру 
-		a.portfolio_link(href='http://junwpblog.zzz.com.ua',target='blank')
-			.portfolio_image_item
-				img.portfolio_image(src='images/work-2.jpg',alt='')
-				.portfolio_link_text 
-					p Сайт-визитка на WordPress 
-					p Перейти к просмотру
+					.portfolio_image_item
+						img.portfolio_image(src='images/Work1.jpg',alt='')
+						.portfolio_link_text 
+							p Сайт-визитка на WordPress 
+							p Перейти к просмотру
+				button.button.portfolio__button Описание
+				p.portfolio__text-none Натяжка тестового шаблона на WP 
+			.portfolio__list-item
+				a.portfolio_link(href='ourworks/work2/index.html',target='_blank')
+
+					.portfolio_image_item
+						img.portfolio_image(src='images/Work2.jpg',alt='')
+						.portfolio_link_text 
+							p Вертска Landing Page
+							p Перейти к просмотру
+				button.button.portfolio__button Описание
+				p.portfolio__text-none Верстка лэндинга на flex-боксах
+			.portfolio__list-item
+				a.portfolio_link(href='https://liferia.com.ua/shop',target='blank')
+					.portfolio_image_item
+						img.portfolio_image.portfolio_image-liferia(src='images/Work3.jpg',alt='')
+						.portfolio_link_text 
+							p Доработки на OcStore
+							p Перейти к просмотру
+				button.button.portfolio__button Описание
+				p.portfolio__text-none Доработки модулей на OcStore
+
